@@ -7,18 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Página Portfólio: único projeto mostrado aqui -->
-  <!-- Esta página destaca um trabalho finalizado e disponível online -->
+  <!-- Página Sobre: apresentação pessoal e hobbies -->
+  <!-- Esta página apresenta dados pessoais e interesses -->
   <nav>
     <div class="nav-logo">Jardel<span>.</span>Ferreira</div>
     <ul class="nav-links" id="nav-links">
-      <li><a href="sobre.html">Sobre mim</a></li>
+      <li><a href="index.html" class="active" aria-current="page">Sobre mim</a></li>
       <li><a href="formacao.html">Formação</a></li>
-      <li><a href="portfolio.html" class="active" aria-current="page">Portfólio</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
       <li><a href="contato.html">Contato</a></li>
     </ul>
     <div class="nav-controls">
@@ -32,33 +32,33 @@
     </div>
   </nav>
 
-  <!-- Área principal do portfólio com projeto centralizado -->
+  <!-- Começa a área principal de apresentação -->
   <main class="page">
-    <p class="eyebrow">Trabalhos Realizados</p>
-    <h1 class="page-title">Portfólio</h1>
+    <p class="eyebrow"> Bem-vindo ao meu portfólio</p>
+    <h1 class="page-title">Jardel <span>Ferreira</span></h1>
+    <p class="hero-role">Desenvolvedor de Software · Estudante de Engenharia de Software</p>
 
-    <div class="portfolio-grid">
+    <p class="hero-bio">
+      Tenho 23 anos, sou do Ceará, e estou cursando Engenharia de Software na UNINTER. Sou apaixonado por tecnologia e
+      resolução de problemas, com foco em desenvolvimento web. Busco sempre transformar ideias em soluções práticas e eficientes.
+    </p>
 
-      <!-- Projeto centralizado no grid para destaque visual -->
-      <div class="project-card">
-        <div class="project-icon">🔐</div>
-        <h3>Tela de login</h3>
-        <p>Primeiro site desenvolvido com HTML e CSS puro, com foco em estrutura semântica e responsividade.</p>
-        <div class="project-tags">
-          <span class="project-tag">HTML5</span>
-          <span class="project-tag">CSS3</span>
-        </div>
-        <a href="https://jardelferreiraa.github.io/Login/" class="project-link" target="_blank">Ver projeto →</a>
-      </div>
+    <p class="section-label">Hobbies</p>
 
+    <!-- Lista de hobbies com ícones representando interesses pessoais -->
+    <div class="tags">
+      <span class="tag">💻 Programação</span>
+      <span class="tag">🎮 Games</span>
+      <span class="tag">📚 Leitura</span>
+      <span class="tag">🚴 Atletismo</span>
     </div>
   </main>
 
-  <!-- Fim do conteúdo da página Portfólio -->
+  <!-- Fim do conteúdo da página Sobre -->
   <footer>
     <p>© 2025 Jardel Ferreira · Desenvolvido com HTML5, CSS3 e JavaScript</p>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
