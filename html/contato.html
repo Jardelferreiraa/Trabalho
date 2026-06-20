@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jardel junio da silva ferreira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Página Contato: formulário e links de contato -->
+  <!-- Inclui acesso ao LinkedIn e GitHub em abas separadas -->
+  <nav>
+    <div class="nav-logo">Jardel<span>.</span>Ferreira</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="sobre.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+        <span class="icon icon-moon">🌙</span>
+        <span class="icon icon-sun">☀️</span>
+      </button>
+      <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Bloco principal com formulário e informações de contato -->
+  <main class="page">
+    <p class="eyebrow">Fale Comigo</p>
+    <h1 class="page-title">Contato</h1>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-info">
+        <h3>Vamos conversar?</h3>
+        <!-- Abaixo estão os principais canais de contato com links externos -->
+        <p>Estou disponível para oportunidades, colaborações ou apenas um bate-papo sobre tecnologia.</p>
+
+        <div class="contact-row">
+          <span>📧</span>
+          <span>jardeljunior2003@gmail.com</span>
+        </div>
+        <div class="contact-row">
+          <span>📍</span>
+          <span>Ceará — Brasil</span>
+        </div>
+        <div class="contact-row">
+          <span>💼</span>
+          <a href="https://www.linkedin.com/in/jardelferreiraa/" target="_blank">https://www.linkedin.com/in/jardelferreiraa/</a>
+        </div>
+        <div class="contact-row">
+          <span>🐙</span>
+          <a href="https://github.com/Jardelferreiraa" target="_blank">https://github.com/Jardelferreiraa</a>
+        </div>
+      </div>
+
+      <form id="form" novalidate>
+        <div class="form-group">
+          <label for="nome">NOME</label>
+          <input type="text" id="nome" placeholder="Seu nome completo" required />
+          <span class="field-error" id="erro-nome">Por favor, informe seu nome.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-MAIL</label>
+          <input type="email" id="email" placeholder="usuario@dominio.com" required />
+          <span class="field-error" id="erro-email">Informe um e-mail válido (ex: usuario@dominio.com).</span>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">MENSAGEM</label>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          <span class="field-error" id="erro-mensagem">Por favor, escreva uma mensagem.</span>
+        </div>
+
+        <button class="btn btn-primary" id="btn-enviar" type="submit">
+          Enviar mensagem
+        </button>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Fim do conteúdo da página Contato -->
+  <footer>
+    <p>© 2025 Jardel Ferreira · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <div class="modal-overlay" id="modal-sucesso" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h3>Mensagem enviada com sucesso!</h3>
+      <p>Obrigado pelo contato, Jardel. Em breve retornarei sua mensagem.</p>
+      <button class="btn btn-primary" id="btn-fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
